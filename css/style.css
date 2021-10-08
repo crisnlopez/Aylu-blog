@@ -2,10 +2,13 @@
     --blanco: #F2E9E4;
     --gris: #625760 ;
     --negro: #151524;
+    --negroTransparente: #151524a2;
     --neutro: #e9e9e9;
 
-    --roboto: font-family: 'Roboto', sans-serif;
-    --robotoCondensed: font-family: 'Roboto Condensed', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+    --robotoCondensed: 'Roboto Condensed', sans-serif;
+
+    --html-fon-size: 4.26vw;
 }
 
 /* Global */
@@ -17,6 +20,11 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
 /* Auxiliar */
 .holder {
     margin: 0 auto;
@@ -26,14 +34,18 @@
 
 /* Header -- Nav */
 header {
+    position: sticky;
+    top: 0;
+    width: 100%;
     padding: 1.25rem 0;
     background-color: var(--blanco);
+    z-index: 100;
 }
 
 .nav-container {
-    height: 30px;
     display: flex;
     justify-content: space-between;
+    height: 30px;
 }
 
 .logo {
@@ -62,7 +74,7 @@ ul.mostrar {
 
 .nav-lista li {
     display: block;
-    margin-top: 3rem;
+    margin-top: 1.75em;
     line-height: 3.5rem;
     text-align: left;
     border-bottom: 1px solid var(--gris);
@@ -95,8 +107,18 @@ button.btn-menu {
 }
 
 /* --Media querys */
+@media screen and (min-width:720px) {
+    header {
+        padding: 1.9rem 0;
+    }
+}
 
 @media screen and (min-width:1030px) {
+    header,
+    .nav-lista {
+        background-color: transparent;
+    }
+
     .nav-lista {
         flex-direction: row;
         justify-content: space-evenly;
