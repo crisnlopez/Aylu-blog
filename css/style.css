@@ -39,6 +39,7 @@ header {
     padding: 1.25rem 0;
     background-color: var(--blanco);
     z-index: 1;
+    transition: all .5s linear;
 }
 
 .nav-container {
@@ -142,15 +143,15 @@ header.flotante {
         fill: #1d1d1b;
     }
     
-    .cls-1,
-    .cls-2 {
-        stroke: #1d1d1b;
-        stroke-miterlimit: 10;
-    }
-    
     .cls-2,
     .cls-3 {
         fill: #fff;
+    }
+
+    .logo {
+        padding: 0 .7rem;
+        background-color: var(--negro);
+        border-radius: 10px;
     }
     
     .nav-lista {
@@ -204,6 +205,7 @@ header.flotante {
         align-items: center;
         justify-content: space-around;
         flex-grow: 1;
+        max-width: 160px;
         border-radius: .3em;
         background-color: var(--blanco);
         opacity: .7;
