@@ -13,18 +13,17 @@ main {
     width: 100%;
     height: 27em;
     object-fit: cover;
-    object-position: 0 2%;
-    filter: grayscale(.1);
+    object-position: -6em 3em;
 }
 
 .hero-texto-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -75%);
     width: 80%;
     color: var(--blanco);
     font-family: var(--roboto);
@@ -47,13 +46,10 @@ main {
     }
 
     .hero-container img {
-        object-position: 0px 36%;
+        object-position: 0em 0em;
     }
-}
 
-@media screen and (min-width:1030px) {
-    .hero-container img {
-        object-position: 0px 42%;
-        filter: grayscale(.3);
+    .hero-texto-container {
+        transform: translate(-50%, -105%);
     }
 }

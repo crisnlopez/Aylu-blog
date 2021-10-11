@@ -22,7 +22,6 @@
 
 img {
     max-width: 100%;
-    height: auto;
 }
 
 .holder {
@@ -208,7 +207,7 @@ header.flotante {
         max-width: 160px;
         border-radius: .3em;
         background-color: var(--blanco);
-        opacity: .7;
+        opacity: .8;
     }
 
     .redes a {
