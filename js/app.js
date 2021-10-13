@@ -11,12 +11,10 @@ const mostrarSaludo = () => {
     if (hora >= 6 && hora < 12) {
         document.getElementById('txt-saludo').innerHTML = 'Buenos dias!';
         document.getElementById('txt-pregunta').innerHTML = 'Qué vas a ver hoy?';
-    }
-    if (hora >= 12 && hora < 20) {
+    } else if (hora >= 12 && hora < 20) {
         document.getElementById('txt-saludo').innerHTML = 'Buenas tardes';
         document.getElementById('txt-pregunta').innerHTML = 'Qué estás viendo hoy?';
-    }
-    if (hora >= 20 && hora < 6) {
+    } else {
         document.getElementById('txt-saludo').innerHTML = 'Buenos noches';
         document.getElementById('txt-pregunta').innerHTML = 'Qué viste hoy?';
     }
