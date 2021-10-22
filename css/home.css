@@ -57,7 +57,9 @@ main {
 
 .card-content {
     display: flex;
+    justify-content: space-between;
     margin-top: 1.5rem;
+    max-width: 1200px;
 }
 
 .card-content:nth-child(even) {
@@ -66,7 +68,7 @@ main {
 
 .card-content .content-titulo,
 .card-content .content-img {
-    width: 50%;
+    width: 48%;
     min-height: 15.979em;
 }
 
