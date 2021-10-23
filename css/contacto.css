@@ -1,0 +1,13 @@
+/* 
+header {
+    position: sticky;
+    background-color: var(--negro);
+}
+
+/* main {
+    min-height: 100vh;
+} */
+
+a {
+    text-decoration: none;
+}

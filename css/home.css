@@ -1,6 +1,7 @@
 main {
     min-height: 100vh;
 }
+
 /* ---Hero---- */
 .hero-container {
     position: relative;
@@ -99,5 +100,19 @@ main {
     /* --Main-content-- */
     .content {
         font-size: 1.5vw;
+    }
+}
+
+@media screen and (min-width:1030px) {
+    /*  ---Header / nav --- */
+    header,
+    .nav-lista {
+        background-color: transparent;
+    }
+
+    header.flotante {
+        padding: 1rem 0;
+        background-color: var(--negro);
+        transition: all .5s linear;
     }
 }

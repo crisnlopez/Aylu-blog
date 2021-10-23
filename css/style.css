@@ -36,7 +36,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 1.25rem 0;
+    padding: 1.5rem 0;
     background-color: var(--blanco);
     z-index: 1;
     transition: all .5s linear;
@@ -119,13 +119,6 @@ button.btn-menu {
     display: none;
 }
 
-/* ----Header - flotante---- */
-header.flotante {
-    padding: 1rem 0;
-    background-color: var(--negro);
-    transition: all .5s linear;
-}
-
 /*  ----Footer----- */
 footer {
     padding: 1rem 0;
@@ -167,7 +160,7 @@ footer {
 @media screen and (min-width:1030px) {
     header,
     .nav-lista {
-        background-color: transparent;
+        background-color: var(--negro);
     }
 
     .cls-1 {
