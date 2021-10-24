@@ -20,6 +20,10 @@
     text-decoration: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 img {
     max-width: 100%;
     height: 100%;
@@ -99,10 +103,6 @@ ul.mostrar {
 
 .nav-lista li a {
     color: var(--negro);
-}
-
-.nav-lista li a:focus {
-    color: var(--gris);
 }
 
 button.btn-menu {
@@ -237,18 +237,13 @@ footer {
 
     .redes a {
         display: inherit;
+        align-items: baseline;
         font-size: .85rem;
         color: var(--negro);
-        transition: .5s ease-in;
     }
 
     .redes img {
         margin-right: .1rem;
-    }
-
-    .redes a:hover {
-        font-size: 1rem;
-        transition: .6s ease-out;
     }
 
     button.btn-menu {

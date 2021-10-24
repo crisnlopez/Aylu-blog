@@ -1,13 +1,10 @@
-/* 
-header {
-    position: sticky;
-    background-color: var(--negro);
+@media screen and (orientation: landscape){
+    main {
+        margin-top: 15rem;
+        margin-bottom: 10rem;
+    }
 }
 
-/* main {
-    min-height: 100vh;
-} */
-
-a {
-    text-decoration: none;
+@media screen and (min-width:1030px) {
+    
 }
