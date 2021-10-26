@@ -1,0 +1,114 @@
+.hero-container {
+    position: relative;
+    width: 100%;
+    font-size: 4vw;
+}
+
+.hero-container img {
+    width: 100%;
+    height: 22em;
+    object-fit: cover;
+    object-position: 0em 1em;
+}
+
+.hero-texto-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    width: 80%;
+    color: var(--blanco);
+    font-family: var(--roboto);
+    line-height: 2.6em;
+    overflow: hidden;
+}
+
+.hero-texto-container h1 {
+    font-size: 2.3825em;
+    padding: .1em .2em;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background-color: var(--gris);
+}
+
+.hero-texto-container span {
+    font-size: 1em;
+    padding: .1em .5em;
+    border-radius: 10px;
+    background-color: var(--negro);
+}
+
+/* Galeria */
+
+section.gallery-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    max-width: 1275px;
+}
+
+.gallery-container {
+    display: grid;
+    gap: 1em;
+    margin: 0 auto;
+}
+
+.gallery-container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.gallery__item img{
+    width: 320px;
+    float: left;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    background-color: var(--gris);
+}
+
+.gallery__item:hover {
+    filter: opacity(.9);
+}
+
+.gallery__item--gigante {
+    width: 640px;
+    z-index: 2;
+}
+
+@media screen and (min-width:720px) {
+    /* --Hero-- */
+    .hero-container {
+        font-size: 2.2vw;
+    }
+
+    .hero-container img {
+        object-position: 0em -2em;
+    }
+
+    .hero-texto-container {
+        transform: translate(-50%, -47%);
+    }
+
+    /* --Galeria-- */
+}
+
+@media screen and (min-width:1030px) {
+    /*  ---Header / nav --- */
+    header,
+    .nav-lista {
+        background-color: var(--negro);
+    }
+
+    header.flotante {
+        padding: 1rem 0;
+        background-color: var(--negro);
+        transition: all .5s linear;
+    }
+
+    .hero-texto-container {
+        transform: translate(-50%, -67%);
+    }
+}

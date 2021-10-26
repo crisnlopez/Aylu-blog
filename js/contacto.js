@@ -29,3 +29,14 @@ addEventListener('DOMContentLoaded', () => {
         $nav_list[0].classList.toggle('mostrar');
     })
 })
+
+addEventListener('scroll', () => {
+  const scrolled = window.scrollY;
+  const windowWidth = window.innerWidth;
+
+  if ((windowWidth > 1029) && (scrolled !== 0)) {
+      $header.classList.add('flotante')
+  }  else {
+      $header.classList.remove('flotante')
+  }
+})

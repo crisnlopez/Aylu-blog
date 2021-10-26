@@ -1,5 +1,5 @@
-main {
-    min-height: 100vh;
+header {
+    position: fixed;
 }
 
 /* ---Hero---- */
@@ -80,6 +80,10 @@ main {
     color: var(--blanco);
     background-color: var(--negro);
     font-size: 1.4em;
+}
+
+.content-img img {
+    height: 100%;
 }
 
 /* --Media Querys-- */
